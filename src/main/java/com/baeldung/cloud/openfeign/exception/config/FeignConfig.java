@@ -1,4 +1,4 @@
-package com.baeldung.cloud.openfeign.config;
+package com.baeldung.cloud.openfeign.exception.config;
 
 import feign.Logger;
 import org.springframework.context.annotation.Bean;

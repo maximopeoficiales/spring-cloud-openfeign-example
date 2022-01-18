@@ -10,19 +10,21 @@ import com.baeldung.cloud.openfeign.fileupload.service.UploadService;
 
 @RestController
 public class FileController {
-    
+
     @Autowired
     private UploadService service;
-    
+
     @PostMapping(value = "/upload")
     public String handleFileUpload(@RequestPart(value = "file") MultipartFile file) {
+
         return service.uploadFile(file);
+
     }
-    
+
     @PostMapping(value = "/upload-mannual-client")
     public boolean handleFileUploadWithManualClient(
             @RequestPart(value = "file") MultipartFile file) {
         return service.uploadFileWithManualClient(file);
     }
-    
+
 }

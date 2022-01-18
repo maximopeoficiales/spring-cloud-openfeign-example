@@ -1,6 +1,6 @@
 package com.baeldung.cloud.openfeign.client;
 
-import com.baeldung.cloud.openfeign.config.ClientConfiguration;
+import com.baeldung.cloud.openfeign.exception.config.ClientConfiguration;
 import com.baeldung.cloud.openfeign.hystrix.JSONPlaceHolderFallback;
 import com.baeldung.cloud.openfeign.model.Post;
 import org.springframework.cloud.openfeign.FeignClient;

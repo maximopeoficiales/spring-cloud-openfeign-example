@@ -1,4 +1,4 @@
-package com.baeldung.cloud.openfeign.config;
+package com.baeldung.cloud.openfeign.exception.config;
 
 import com.baeldung.cloud.openfeign.exception.BadRequestException;
 import com.baeldung.cloud.openfeign.exception.NotFoundException;
