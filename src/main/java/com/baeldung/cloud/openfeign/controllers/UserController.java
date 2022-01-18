@@ -1,9 +1,8 @@
 package com.baeldung.cloud.openfeign.controllers;
 
 
-import com.baeldung.cloud.openfeign.model.Post;
-import com.baeldung.cloud.openfeign.model.User;
-import com.baeldung.cloud.openfeign.service.UserJSONPlaceHolderService;
+import com.baeldung.cloud.openfeign.models.User;
+import com.baeldung.cloud.openfeign.services.UserJSONPlaceHolderService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;

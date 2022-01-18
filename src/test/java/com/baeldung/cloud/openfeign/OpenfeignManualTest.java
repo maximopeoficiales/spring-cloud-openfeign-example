@@ -1,7 +1,7 @@
 package com.baeldung.cloud.openfeign;
 
-import com.baeldung.cloud.openfeign.model.Post;
-import com.baeldung.cloud.openfeign.service.JSONPlaceHolderService;
+import com.baeldung.cloud.openfeign.models.Post;
+import com.baeldung.cloud.openfeign.services.PostJSONPlaceHolderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import static org.junit.Assert.assertNotNull;
 class OpenfeignUnitTest {
 
     @Autowired
-    private JSONPlaceHolderService jsonPlaceHolderService;
+    private PostJSONPlaceHolderService postJsonPlaceHolderService;
 
     @Test
     public void whenSpringContextIsBootstrapped_thenNoExceptions() {
@@ -27,7 +27,7 @@ class OpenfeignUnitTest {
     @Test
     public void whenGetPosts_thenListPostSizeGreaterThanZero() {
 
-        List<Post> posts = jsonPlaceHolderService.getPosts();
+        List<Post> posts = postJsonPlaceHolderService.getPosts();
 
         assertFalse(posts.isEmpty());
     }
@@ -35,7 +35,7 @@ class OpenfeignUnitTest {
     @Test
     public void whenGetPostWithId_thenPostExist() {
 
-        Post post = jsonPlaceHolderService.getPostById(1L);
+        Post post = postJsonPlaceHolderService.getPostById(1L);
 
         assertNotNull(post);
     }

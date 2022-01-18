@@ -1,9 +1,8 @@
 package com.baeldung.cloud.openfeign.controllers;
 
 
-import com.baeldung.cloud.openfeign.model.Post;
-import com.baeldung.cloud.openfeign.service.JSONPlaceHolderService;
-import com.baeldung.cloud.openfeign.service.impl.JSONPlaceHolderServiceImpl;
+import com.baeldung.cloud.openfeign.models.Post;
+import com.baeldung.cloud.openfeign.services.PostJSONPlaceHolderService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -20,7 +19,7 @@ import java.util.List;
 @RequestMapping("/public/post")
 public class PostController {
     @Autowired
-    private JSONPlaceHolderService client;
+    private PostJSONPlaceHolderService client;
 
     @GetMapping("/all")
     @ApiOperation("Get all posts")

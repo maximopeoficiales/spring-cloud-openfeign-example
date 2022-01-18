@@ -1,6 +1,6 @@
-package com.baeldung.cloud.openfeign.service;
+package com.baeldung.cloud.openfeign.services;
 
-import com.baeldung.cloud.openfeign.model.User;
+import com.baeldung.cloud.openfeign.models.User;
 
 import java.util.List;
 

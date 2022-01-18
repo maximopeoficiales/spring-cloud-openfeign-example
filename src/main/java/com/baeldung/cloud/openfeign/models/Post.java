@@ -1,4 +1,4 @@
-package com.baeldung.cloud.openfeign.model;
+package com.baeldung.cloud.openfeign.models;
 
 public class Post {
 

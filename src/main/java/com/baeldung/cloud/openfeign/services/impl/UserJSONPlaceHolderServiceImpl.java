@@ -1,8 +1,8 @@
-package com.baeldung.cloud.openfeign.service.impl;
+package com.baeldung.cloud.openfeign.services.impl;
 
-import com.baeldung.cloud.openfeign.client.UserJsonPlaceHolderClient;
-import com.baeldung.cloud.openfeign.model.User;
-import com.baeldung.cloud.openfeign.service.UserJSONPlaceHolderService;
+import com.baeldung.cloud.openfeign.clients.UserJsonPlaceHolderClient;
+import com.baeldung.cloud.openfeign.models.User;
+import com.baeldung.cloud.openfeign.services.UserJSONPlaceHolderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
