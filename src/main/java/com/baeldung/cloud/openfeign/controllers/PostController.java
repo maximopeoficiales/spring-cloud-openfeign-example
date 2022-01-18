@@ -24,7 +24,7 @@ public class PostController {
     @GetMapping("/all")
     @ApiOperation("Get all posts")
     @ApiResponse(code = 200, message = "OK")
-    public ResponseEntity<List<Post>> getClients() {
+    public ResponseEntity<List<Post>> getAll() {
         return new ResponseEntity<>(client.getPosts(), HttpStatus.OK);
     }
 
