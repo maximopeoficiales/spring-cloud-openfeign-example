@@ -23,13 +23,15 @@ public class PostController {
     private JSONPlaceHolderService client;
 
     @GetMapping("/all")
+    @ApiOperation("Get all posts")
+    @ApiResponse(code = 200, message = "OK")
     public ResponseEntity<List<Post>> getClients() {
         return new ResponseEntity<>(client.getPosts(), HttpStatus.OK);
     }
 
     @GetMapping("/findById/{id}")
     @ApiOperation("Search a post with a ID")
-    @ApiResponses({@ApiResponse(code = 200, message = "OK"), @ApiResponse(code = 404, message = "User not found")})
+    @ApiResponses({@ApiResponse(code = 200, message = "OK"), @ApiResponse(code = 404, message = "Post not found")})
     public ResponseEntity<Post> getById(
             @ApiParam(value = "The id of the post", required = true, example = "5")
             @PathVariable("id") Long idPost) {
